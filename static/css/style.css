@@ -20,6 +20,7 @@ hr {
     color: #1A9DBA;
     font-weight: bold;
     margin-left: 35px;
+    text-transform: uppercase;
 }
 
 .h2 {
@@ -35,16 +36,13 @@ hr {
 }
 
 .container {
-    width: 100%;
-    height: 100% ;
+    display: flex;
+    overflow: hidden;
 }
 
 
 .container .siderbar {
-    width: 33.3%;
-    display: inline-table;
-    height: 100%;
-    float: left;
+    flex:1;
     background: #F7F7F7;
     -webkit-box-shadow: 10px 0px 10px 0px rgba(181,174,181,0.32);
     -moz-box-shadow: 10px 0px 10px 0px rgba(181,174,181,0.32);
@@ -73,9 +71,7 @@ hr {
 
 
 .container .content {
-    width: 66.6%;
-    height: 100%;
-    display: inline-table;
+    flex:2;
     float: left;
     padding: 0 0;
 }
