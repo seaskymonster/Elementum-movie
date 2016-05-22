@@ -1,0 +1,19 @@
+
+<div class = "container" data-ng-init="init()">
+    <div class="siderbar">
+        <h1 class = "h1">BROWSE MOVIES</h1>
+        <hr>
+        <div ng-repeat="movie in Movies" class="movie">
+            <img src="{{movie.url}}}" ng-click="setMovie(movie.id)">
+            <div>
+                <div class="h2">{{movie.title}}</div>
+                <div>XXXXXX</div>
+            </div>
+        </div>
+    </div>
+    <div class = "content">
+        <movie-content></movie-content>
+        <movie-credit></movie-credit>
+    </div>
+    <p style="clear:both;"></p>
+</div>

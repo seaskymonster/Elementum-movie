@@ -1,0 +1,21 @@
+<div class="upper">
+        <h1 class = "h1">{{currentMovie.title}}</h1>
+        <hr>
+        <div>
+            <div class="image"><img ng-src="{{currentMovie.url}}}"></div>
+            <div class="description">
+
+                    <div class="h2">WHO MADE IT?</div>
+                    <div style="margin-top: 10px;"><span>Director:</span> {{currentMovieCredit.director}}</div>
+                    <div><span>Writers:</span> <span ng-repeat="writer in currentMovieCredit.writers | limitTo: 5">{{writer.name}}{{$last ? '' : ', '}}</span></div>
+                    <div><span>Stars:</span> <span ng-repeat="star in currentMovieCredit.cast | limitTo: 5 | orderBy: star.order ">{{star.name}}{{$last ? '' : ', '}}</span></div>
+
+
+                    <div class="h2" style="margin-top: 20px;">WHAT'S IT ABOUT?</div>
+                    <div style="margin-top: 10px;">{{currentMovie.overview}}</div>
+
+            </div>
+        </div>
+</div>
+
+
