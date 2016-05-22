@@ -1,0 +1,22 @@
+{
+  "name": "elementum-movie",
+  "version": "1.0.0",
+  "description": "sample app for elementum",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seaskymonster/Elementum-movie.git"
+  },
+  "author": "Wenlai Zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seaskymonster/Elementum-movie/issues"
+  },
+  "homepage": "https://github.com/seaskymonster/Elementum-movie#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
