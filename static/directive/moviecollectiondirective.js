@@ -3,7 +3,7 @@
         .directive('movieCollection', MovieCollectionDirective);
 
     function MovieCollectionDirective() {
-        console.log('here in moviecollectiondirecitve');
+        //console.log('here in moviecollectiondirecitve');
         return {
             restrict: 'E',
             controller: 'MovieCollectionController',

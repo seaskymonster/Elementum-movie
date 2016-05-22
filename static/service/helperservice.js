@@ -12,7 +12,7 @@
         function getMovieCollectionById(id){
             return movieCollectionService.get({id: id}).$promise
                 .then(function(response){
-                    console.log('response', response);
+                    //console.log('response', response);
                     if(response.error){
                         return $q.reject(response.error);
                     }
@@ -48,7 +48,7 @@
         function getMovieContentById(id){
             return movieContentService.get({id: id}).$promise
                 .then(function(response){
-                    console.log('movie_response', response);
+                    //console.log('movie_response', response);
                     if(response.error){
                         return $q.reject(response.error);
                     }
@@ -73,7 +73,7 @@
         function getMovieCreditById(id){
             return movieCreditService.get({id: id}).$promise
                 .then(function(response){
-                    console.log('getMovieCreditById',response);
+                    //console.log('getMovieCreditById',response);
                     if(response.error){
                         return $q.reject(response.error);
                     }
@@ -98,7 +98,7 @@
                             writers: writers
                         };
                     }
-                    console.log('credits', credits);
+                    //console.log('credits', credits);
                     return $q.resolve(credits);
                 });
         }

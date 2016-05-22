@@ -29,7 +29,7 @@
 
         $scope.init = function () {
             CollectionHelperService.getMovieCollectionById(528).then(function (collection) {
-                console.log('collection',collection);
+                //console.log('collection',collection);
                 $scope.Movies = collection.movies;
                 return collection;
             }, function (ex) {
